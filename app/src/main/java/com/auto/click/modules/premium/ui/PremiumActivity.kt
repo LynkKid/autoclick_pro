@@ -1,18 +1,19 @@
 package com.auto.click.modules.premium.ui
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import com.android.billingclient.api.ProductDetails
 import com.auto.click.InAppMNG
 import com.auto.click.R
+import com.auto.click.WebActivity
 import com.auto.click.appcomponents.utility.Utils.dp2px
 import com.auto.click.appcomponents.utility.setSafeOnClickListener
 import com.auto.click.databinding.ActivityPremiumBinding
-import com.google.android.material.card.MaterialCardView
 
 class PremiumActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPremiumBinding
@@ -25,12 +26,47 @@ class PremiumActivity : AppCompatActivity() {
         binding.ivClose.setSafeOnClickListener {
             finish()
         }
+        binding.tvSubNotice.setSafeOnClickListener {
+            DialogSubscribeNoticeFragment.show(this)
+        }
+
+        binding.tvGooglePlay.setSafeOnClickListener {
+            try {
+                // Tạo Intent để mở Google Play Store subscription page
+                val intent = Intent(
+                    Intent.ACTION_VIEW,
+                    "https://play.google.com/store/account/subscriptions".toUri()
+                )
+                startActivity(intent)
+
+            } catch (e: Exception) {
+                // Nếu không mở được Google Play Store, thử mở bằng market://
+                try {
+                    val marketIntent = Intent(Intent.ACTION_VIEW, "market://subscriptions".toUri())
+                    marketIntent.setPackage("com.android.vending")
+                    startActivity(marketIntent)
+                } catch (_: Exception) {
+                }
+            }
+        }
+
+        binding.tvTerms.setSafeOnClickListener {
+            val intent = Intent(this, WebActivity::class.java).apply {
+                putExtra("url", "https://www.gcautoclicker.com/recoverdeleted_terms.html")
+                putExtra("title", "End User License Agreement")
+            }
+            startActivity(intent)
+        }
 
         binding.lineSubYear.setSafeOnClickListener {
             buyProduct(InAppMNG.SUBS_KEY_2, "SUBS")
         }
         binding.lineSubMonth.setSafeOnClickListener {
             buyProduct(InAppMNG.SUBS_KEY_1, "SUBS")
+        }
+
+        binding.tvRestore.setSafeOnClickListener {
+            restorePurchases()
         }
 
         InAppMNG.getSubsProductInfo { _, p1 -> updatePrice(p1) }
@@ -137,14 +173,20 @@ class PremiumActivity : AppCompatActivity() {
                     progressDialog?.dismiss()
                     progressDialog = null
                     toast?.cancel()
-                    toast = Toast.makeText(applicationContext, "Purchase Error! " + errorCode + ". MSG = " + error?.localizedMessage, Toast.LENGTH_SHORT)
+                    toast = Toast.makeText(
+                        applicationContext,
+                        "Purchase Error! " + errorCode + ". MSG = " + error?.localizedMessage,
+                        Toast.LENGTH_SHORT
+                    )
                     toast?.show()
                 }
+
                 override fun onProductPurchased() {
                     progressDialog?.dismiss()
                     progressDialog = null
                     toast?.cancel()
-                    toast = Toast.makeText(applicationContext, "Purchase Success!", Toast.LENGTH_SHORT)
+                    toast =
+                        Toast.makeText(applicationContext, "Purchase Success!", Toast.LENGTH_SHORT)
                     toast?.show()
                     setResult(RESULT_OK)
                     finish()
@@ -157,19 +199,61 @@ class PremiumActivity : AppCompatActivity() {
                     progressDialog?.dismiss()
                     progressDialog = null
                     toast?.cancel()
-                    toast = Toast.makeText(applicationContext, "Purchase Error! " + errorCode + ". MSG = " + error?.localizedMessage, Toast.LENGTH_SHORT)
+                    toast = Toast.makeText(
+                        applicationContext,
+                        "Purchase Error! " + errorCode + ". MSG = " + error?.localizedMessage,
+                        Toast.LENGTH_SHORT
+                    )
                     toast?.show()
                 }
+
                 override fun onProductPurchased() {
                     progressDialog?.dismiss()
                     progressDialog = null
                     toast?.cancel()
-                    toast = Toast.makeText(applicationContext, "Purchase Success!", Toast.LENGTH_SHORT)
+                    toast =
+                        Toast.makeText(applicationContext, "Purchase Success!", Toast.LENGTH_SHORT)
                     toast?.show()
                     setResult(RESULT_OK)
                     finish()
                 }
             })
         }
+    }
+
+    private fun restorePurchases() {
+        progressDialog?.dismiss()
+        progressDialog = ProgressDialog(this)
+        progressDialog?.setCancelable(true)
+        progressDialog?.setMessage("Restoring purchases...")
+        progressDialog?.show()
+        
+        InAppMNG.restorePurchases(object : InAppMNG.InAppListener {
+            override fun onBillingError(errorCode: Int, error: Throwable?) {
+                progressDialog?.dismiss()
+                progressDialog = null
+                toast?.cancel()
+                toast = Toast.makeText(
+                    applicationContext,
+                    "Restore Error! " + errorCode + ". MSG = " + error?.localizedMessage,
+                    Toast.LENGTH_SHORT
+                )
+                toast?.show()
+            }
+
+            override fun onProductPurchased() {
+                progressDialog?.dismiss()
+                progressDialog = null
+                toast?.cancel()
+                toast = Toast.makeText(
+                    applicationContext, 
+                    "Restore Success! Premium features restored.", 
+                    Toast.LENGTH_SHORT
+                )
+                toast?.show()
+                setResult(RESULT_OK)
+                finish()
+            }
+        })
     }
 }

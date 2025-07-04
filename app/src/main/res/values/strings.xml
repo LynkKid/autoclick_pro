@@ -210,4 +210,11 @@
     <string name="text_menu_size">Kích thước menu</string>
     <string name="text_custom_size">Kích thước tùy chỉnh</string>
     <string name="text_size_customization">Tùy chỉnh kích thước</string>
+    <string name="text_sub_desc1">1. Trong thời gian đăng ký, người dùng được hưởng các dịch vụ VIP, không bao gồm quảng cáo và không hạn chế tính năng.</string>
+    <string name="text_sub_desc2">2. Dịch vụ VIP được liên kết với tài khoản Google Play, vì vậy bạn sẽ không cần đăng ký lại khi có thể thay thế điện thoại của mình hoặc cài đặt lại ứng dụng sau khi xóa.</string>
+    <string name="text_sub_desc3">3. Sẽ không bị tính phí nếu đăng ký bị hủy trong thời gian dùng thử.</string>
+    <string name="text_sub_desc4">4. Theo thông số kỹ thuật của Google Play, nếu bạn không hủy đăng ký của mình trong thời hạn đăng ký, Google Play sẽ tự động gia hạn đăng ký của bạn.</string>
+    <string name="text_sub_desc5">5. Nếu bạn muốn hủy đăng ký, bạn có thể thực hiện việc này qua Google Play.</string>
+    <string name="text_ok_go">OK, ĐÃ RỒI</string>
+    <string name="text_language">Ngôn ngữ</string>
 </resources>

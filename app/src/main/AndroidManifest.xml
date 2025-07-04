@@ -54,6 +54,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".WebActivity"
+            android:exported="false" />
+        <activity
             android:name=".modules.navigation.ui.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="true"

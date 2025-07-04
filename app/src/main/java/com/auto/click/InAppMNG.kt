@@ -134,6 +134,30 @@ class InAppMNG {
             bp?.billingService?.queryProductDetailsAsync(queryProductDetailsParams, listener)
         }
 
+        fun restorePurchases(listener: InAppListener? = null) {
+            inAppListener = listener
+            bp?.loadOwnedPurchasesFromGoogleAsync(object : IPurchasesResponseListener {
+                override fun onPurchasesSuccess() {
+                    Log.d("CUONGNN", "restorePurchases onPurchasesSuccess")
+                    // Cập nhật trạng thái premium sau khi restore
+                    tempPro = isProVersion()
+                    // Gửi broadcast để thông báo cho các component khác
+                    context?.let {
+                        LocalBroadcastManager.getInstance(it).sendBroadcast(Intent("Action_InApp"))
+                    }
+                    // Gọi listener nếu có
+                    inAppListener?.onProductPurchased()
+                    inAppListener = null
+                }
+
+                override fun onPurchasesError() {
+                    Log.d("CUONGNN", "restorePurchases onPurchasesError")
+                    inAppListener?.onBillingError(-1, null)
+                    inAppListener = null
+                }
+            })
+        }
+
         override fun onProductPurchased(productId: String, details: PurchaseInfo?) {
             bp?.handleItemAlreadyOwned(productId)
             tempPro = true
@@ -145,7 +169,16 @@ class InAppMNG {
         }
 
         override fun onPurchaseHistoryRestored() {
-            //
+            Log.d("CUONGNN", "onPurchaseHistoryRestored")
+            // Cập nhật trạng thái premium sau khi restore
+            tempPro = isProVersion()
+            // Gửi broadcast để thông báo cho các component khác
+            context?.let {
+                LocalBroadcastManager.getInstance(it).sendBroadcast(Intent("Action_InApp"))
+            }
+            // Gọi listener nếu có
+            inAppListener?.onProductPurchased()
+            inAppListener = null
         }
 
         override fun onBillingError(errorCode: Int, error: Throwable?) {

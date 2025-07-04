@@ -3,6 +3,10 @@
     <style name="Base.Theme.AutoClick" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Áp dụng style cho toolbar navigation button -->
+        <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
     </style>
 
     <style name="Theme.AutoClick" parent="Base.Theme.AutoClick">
