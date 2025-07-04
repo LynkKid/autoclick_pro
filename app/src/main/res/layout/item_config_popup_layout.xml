@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ivPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_f7f7f7_radius8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingTop="12dp"
+        android:paddingRight="@dimen/default_margin"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_wz_app"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvConfigName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="config 1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/tvConfigMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/text_clicker_single_mode"
+                android:textColor="@color/font4"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/icon_menu_play_pause" />
+    </LinearLayout>
+</LinearLayout>

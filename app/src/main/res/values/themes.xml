@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AutoClick" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.AutoClick" parent="Base.Theme.AutoClick">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="_XPopup_TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="BottomNavigationView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="BottomNavigationView.Active">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Theme.AutoClick.Text" />
+
+    <style name="Theme.AutoClick.Text.Roboto" />
+
+    <style name="Theme.AutoClick.Text.Roboto.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.AutoClick.Text.Roboto.Italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Theme.AutoClick.Text.Roboto.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Theme.AutoClick.Text.Roboto.Regular">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

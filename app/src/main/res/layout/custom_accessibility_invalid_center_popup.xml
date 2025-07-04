@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/bg_ffffff_radius8"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="15dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_wza_wjh"
+        android:textColor="@color/color_f2994a"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:lineSpacingMultiplier="1.12"
+        android:text="@string/text_accessibility_troubleshooting"
+        android:textColor="@color/font1"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tvOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:padding="11dp"
+        android:text="@string/text_desc6"
+        android:textAllCaps="true"
+        android:textColor="@color/color_2e2ee5"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+</LinearLayout>

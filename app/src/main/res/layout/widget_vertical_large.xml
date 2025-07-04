@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_floating_menu"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingVertical="12dp">
+
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_play_pause" />
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_add" />
+
+    <ImageView
+        android:id="@+id/ivSwiping"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_add_slide" />
+
+    <ImageView
+        android:id="@+id/ivRemove"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_minimize" />
+
+    <ImageView
+        android:id="@+id/ivSave"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_save" />
+
+    <ImageView
+        android:id="@+id/ivBackApp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_home_app" />
+
+    <ImageView
+        android:id="@+id/ivShowHind"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_xianshi" />
+
+    <ImageView
+        android:id="@+id/ivSetting"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_settings" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_close"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivMin"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_minimization" />
+
+    <ImageView
+        android:id="@+id/ivGameMode"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_game_mode" />
+
+    <ImageView
+        android:id="@+id/ivZoom"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon_menu_sxzy" />
+
+</LinearLayout>

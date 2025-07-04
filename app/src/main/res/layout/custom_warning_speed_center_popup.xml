@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ffffff_radius8"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="35dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/jg_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/text_jg_desc1"
+        android:textColor="@color/font1"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/less_than_40s"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#1af2994a"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_jg_desc2"
+            android:textColor="@color/color_f2994a"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_jg_desc3"
+            android:textColor="@color/color_f2994a"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_jg_desc4"
+            android:textColor="@color/color_f2994a"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_fff2994a_radius16"
+        android:gravity="center"
+        android:text="@string/text_confirm"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_line_000000_w1_radius50"
+        android:gravity="center"
+        android:text="@string/text_cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/font1"
+        android:textStyle="bold" />
+</LinearLayout>

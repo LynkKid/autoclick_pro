@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7fa"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/ui_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lineFQA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    style="@style/Theme.AutoClick.Text.Roboto.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_faq1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/ivExpand"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa11"
+                    android:textColor="@color/font2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa12"
+                    android:textColor="@color/font2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa13"
+                    android:textColor="@color/font2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    style="@style/Theme.AutoClick.Text.Roboto.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_fqa2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/ivExpand2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa21"
+                    android:textColor="@color/font2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa22"
+                    android:textColor="@color/font2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    style="@style/Theme.AutoClick.Text.Roboto.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_fqa3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/ivExpand3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa31"
+                    android:textColor="@color/font2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    style="@style/Theme.AutoClick.Text.Roboto.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_fqa4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/ivExpand4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa41"
+                    android:textColor="@color/font2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    style="@style/Theme.AutoClick.Text.Roboto.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_fqa5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/ivExpand5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineFQA51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="25dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/text_fqa51"
+                    android:textColor="@color/font2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/selector_tab_home"
+        android:title="@string/text_tab_home" />
+    <item
+        android:id="@+id/configManagerFragment"
+        android:icon="@drawable/selector_tab_config"
+        android:title="@string/text_tab_config" />
+    <item
+        android:id="@+id/vipFragment"
+        android:icon="@drawable/selector_tab_vip"
+        android:title="@string/text_tab_vip" />
+</menu>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lineSetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_fragment_dialog"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lineTabSave"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_tab_save"
+                        android:textColor="@color/font3"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/viewLineSave"
+                        android:layout_width="25dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/color_2e2ee5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lineTabLoad"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLoad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_loading_config"
+                        android:textColor="@color/font5"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <View
+                        android:id="@+id/viewLineLoad"
+                        android:layout_width="25dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/color_2e2ee5"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <EditText
+                        android:id="@+id/editConfigName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <FrameLayout
+                        android:id="@+id/frameNull"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvConfig"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            android:scrollbars="none" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvSaveConfig"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_2e2ee5_radius12"
+                        android:gravity="center"
+                        android:text="@string/text_save"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_line_fffffff_radius8"
+                        android:gravity="center"
+                        android:text="@string/text_cancel"
+                        android:textAllCaps="true"
+                        android:layout_below="@id/tvSaveConfig"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

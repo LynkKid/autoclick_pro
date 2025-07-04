@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/ui_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lineTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a2e2ee5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/icon_open_success" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/text_accessibility_successfully"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/lineCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="20dp"
+                            android:text="@string/text_accessibility"
+                            android:textColor="@color/color_484649"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/ivWarningDots"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:scaleType="centerCrop"
+                            android:src="#ffc107"
+                            app:riv_oval="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/text_acc_on_desc"
+                        android:textColor="@color/text_8c8c8c"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tvActSet"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/bg_f4f4f4_radius32"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/text_go_to_settings"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/ivActOpenOK"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/bg_1a2e2ee5_radius43"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/icon_open_success" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvReactivation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/text_underline"
+                        android:text="@string/text_desc6"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/lineCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_battery_optimization"
+                            android:textColor="@color/color_484649"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/ivBatWarningDots"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:scaleType="centerCrop"
+                            android:src="#ffc107"
+                            app:riv_oval="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/text_sd_desc"
+                        android:textColor="@color/text_8c8c8c"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp">
+
+                        <TextView
+                            android:id="@+id/tvSetBattery"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/bg_f4f4f4_radius32"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/text_go_to_settings"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/ivOpenOK"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/bg_1a2e2ee5_radius43"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/icon_open_success" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--<androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="24dp"
+                app:contentPaddingLeft="20dp"
+                app:contentPaddingRight="20dp"
+                app:contentPaddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_zdqd"
+                        android:textColor="@color/color_484649"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/text_auto_start_on_desc"
+                        android:textColor="@color/text_8c8c8c"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvAutoStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_line_000000_w1_radius50"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/text_go_to_settings"
+                        android:textColor="@color/font4"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

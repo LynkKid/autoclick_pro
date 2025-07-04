@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:hasFragileUserData="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoClick"
+        tools:targetApi="31">
+        <activity
+            android:name=".modules.size_customization.ui.SizeCustomizationActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2761018982711916~2241544552" />
+
+        <activity
+            android:name=".modules.premium.ui.PremiumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.auto_start.ui.AutoStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.instructions.ui.InstructionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.faq.ui.FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.permissions.ui.PermissionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.settings.ui.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.splash.ui.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.navigation.ui.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <service
+            android:name=".AutoClickService"
+            android:exported="true"
+            android:label="@string/accessibility_service_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/config" />
+        </service>
+
+        <receiver
+            android:name=".ChangeDataConfigReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="CHANGE_DATA_CONFIG" />
+                <action android:name="AUTO_CLICK_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

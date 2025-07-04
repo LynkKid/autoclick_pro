@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/ui_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="25dp"
+                app:contentPaddingTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/text_default_settings"
+                        android:textColor="@color/font1"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/text_default_set_desc"
+                        android:textColor="@color/color_ffbb33"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_delay"
+                            android:textColor="@color/font1"
+                            android:textSize="@dimen/text_size_15"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/text_delay_desc_click_of_next"
+                            android:textColor="@color/font2"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="5dp">
+
+                        <EditText
+                            android:id="@+id/editDelayTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:text="30"
+                            android:textColor="@color/color_2e2ee5"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <Spinner
+                            android:id="@+id/spinnerIntervalUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:dropDownVerticalOffset="-12dp"
+                            android:entries="@array/time_arr" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/text_click_intervals_tips"
+                        android:textColor="@color/color_ffbb33"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_swipe_duration"
+                            android:textColor="@color/font1"
+                            android:textSize="@dimen/text_size_15"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/text_swipe_duration_desc"
+                            android:textColor="@color/font2"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="5dp">
+
+                        <EditText
+                            android:id="@+id/editSwipeTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:text="300"
+                            android:textColor="@color/color_2e2ee5"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp"
+                            android:text="@string/text_milliseconds"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
