@@ -18,4 +18,22 @@
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
-#-renamesourcefileattribute SourceFile
+-renamesourcefileattribute SourceFile
+
+# Keep billing classes
+-keep class com.android.billingclient.** { *; }
+-keep class com.anjlab.android.iab.v3.** { *; }
+
+# Keep accessibility service
+-keep class com.auto.click.AutoClickService { *; }
+
+# Keep model classes
+-keep class com.auto.click.model.** { *; }
+
+# Keep InAppMNG
+-keep class com.auto.click.InAppMNG { *; }
+
+# Keep WebView
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}

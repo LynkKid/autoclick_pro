@@ -117,7 +117,13 @@ class AutoClickService : AccessibilityService() {
                             isOpenWithApplication = true
                         }
 
-                        OptionConfig.NONE -> TODO()
+                        OptionConfig.NONE -> {
+                            // Không có cấu hình nào được chọn
+                            if (isViewCreated && isOpenWithApplication) {
+                                removeView()
+                                isOpenWithApplication = false
+                            }
+                        }
                     }
                 }
             } else {
