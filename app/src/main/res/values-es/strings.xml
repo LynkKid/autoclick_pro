@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoClickerPro</string>
+    <string name="accessibility_service_name">AutoClickerPro</string>
+    <string name="accessibility_service_id">com.hd.auto.click.pro</string>
+    <string name="accessibility_service_description">Esta aplicación requiere los siguientes permisos:\nMonitorear su actividad: Requerido para todos los servicios de accesibilidad.\nSimular acciones táctiles: Realizar operaciones táctiles automáticas. Tenga la seguridad de que esta aplicación no recopila información personal. Gracias por su apoyo, disfrute usándola.</string>
+    
+    <!-- Main UI -->
+    <string name="text_tab_home">Inicio</string>
+    <string name="text_tab_config">Config</string>
+    <string name="text_tab_vip">Premium</string>
+    <string name="text_settings">Configuración</string>
+    <string name="text_instructions">Instrucciones</string>
+    <string name="text_permissions">Permisos</string>
+    
+    <!-- Actions -->
+    <string name="text_let_s_start">INICIAR</string>
+    <string name="text_let_s_stop">DETENER</string>
+    <string name="text_save">Guardar</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="text_delete">Eliminar</string>
+    <string name="text_edit">Editar</string>
+    <string name="text_done">Hecho</string>
+    <string name="text_confirm">OK</string>
+    
+    <!-- Clicker Modes -->
+    <string name="text_clicker_single_mode">Modo Punto Único</string>
+    <string name="text_clicker_single_desc">Hacer clic repetidamente en la misma posición en intervalos especificados</string>
+    <string name="text_clicker_multi_mode">Modo Múltiples Puntos</string>
+    <string name="text_clicker_multi_desc">Configurar una serie de clics o deslizamientos en múltiples posiciones</string>
+    <string name="text_clicker_synchronization_mode">Modo Sincronización</string>
+    <string name="text_clicker_synchronization_desc">Configurar acciones de clic en múltiples posiciones para sincronizar clics</string>
+    <string name="text_clicker_record_mode">Modo Grabación</string>
+    <string name="text_clicker_record_mode_desc">Realizar los pasos que desea realizar directamente en la pantalla y las acciones objetivo se agregarán automáticamente.</string>
+    <string name="text_clicker_long_mode">Modo Mantener Presionado</string>
+    <string name="text_clicker_long_desc">Configurar una acción en la posición especificada, siempre realizará una operación de mantener presionado</string>
+    <string name="text_clicker_edge_mode">Modo Borde</string>
+    <string name="text_clicker_edge_mode_desc">Al cambiar la dirección del toque, puede hacer que toque en cualquier lugar de la pantalla.</string>
+    
+    <!-- Configuration -->
+    <string name="text_configurations">Gestión de Configuración</string>
+    <string name="text_save_tips">Sus scripts guardados se mostrarán aquí</string>
+    <string name="text_create">Crear Ahora</string>
+    <string name="text_start_a_new">Crear Nueva Config</string>
+    <string name="text_select_a_config">Por favor seleccione una configuración</string>
+    <string name="text_config_save_success">Guardado exitosamente</string>
+    <string name="text_delete_config">¿Eliminar esta configuración?</string>
+    <string name="text_edit_name">Renombrar</string>
+    <string name="text_backup">Copiar</string>
+    <string name="text_export">Exportar</string>
+    
+    <!-- Settings -->
+    <string name="text_advanced_settings">Configuración Avanzada</string>
+    <string name="text_game_mode">Modo Juego</string>
+    <string name="tet_game_mode_desc">Solo mostrar botón de inicio pausa</string>
+    <string name="text_folded_menu">Menú Plegado</string>
+    <string name="automatic_menu_collapse_at_runtime">Colapsar automáticamente el menú al ejecutar</string>
+    <string name="text_menu_display">Visualización del Menú</string>
+    <string name="text_display_desc">Mostrar barra de menú horizontalmente</string>
+    <string name="text_minimise_menu">Minimizar Menú</string>
+    <string name="text_minmise_desc">Ocultar ventana flotante al borde de la pantalla</string>
+    <string name="text_to_avoid_game_detection">Evitar Detección de Trampas</string>
+    <string name="text_str_random_interval">Intervalo Aleatorio</string>
+    <string name="text_str_random_position">Posición Aleatoria</string>
+    <string name="text_restore_defaults">Restaurar Predeterminados</string>
+    <string name="text_restore_defaults_desc">Presionar para restaurar original</string>
+    
+    <!-- Timing -->
+    <string name="text_delay">Retraso</string>
+    <string name="text_delay_desc">Tiempo de retraso</string>
+    <string name="text_delay_desc_click_of_next">Tiempo entre próximos clics</string>
+    <string name="text_number_of_times">Conteo de Bucle</string>
+    <string name="text_repeat_tilte">Conteo de Repetición</string>
+    <string name="text_repeat_desc">Cuántas veces repetir esta acción</string>
+    <string name="text_times">veces</string>
+    <string name="text_never">Bucle Infinito</string>
+    <string name="text_hour">h</string>
+    <string name="text_min">m</string>
+    <string name="text_second">s</string>
+    <string name="text_milliseconds">Milisegundos</string>
+    
+    <!-- Permissions -->
+    <string name="text_accessibility">Servicio de Accesibilidad</string>
+    <string name="text_wsm_acc">Usamos la API de Servicios de Accesibilidad para implementar las funciones principales de la aplicación</string>
+    <string name="text_xy">1. ¿Por qué usar este servicio?\n Usamos este método para implementar funciones básicas como hacer clic y flexibilidad. \n2. ¿Recopilamos datos privados?\n No recopilaremos ningún dato personal de esta manera. Si está de acuerdo en usarlos, haga clic en el botón aceptar y continúe</string>
+    <string name="text_disagree">No Estoy de Acuerdo</string>
+    <string name="text_agree">Estoy de Acuerdo</string>
+    <string name="text_go_to_settings">Configuración</string>
+    <string name="text_accessibility_successfully">Servicio de accesibilidad iniciado exitosamente</string>
+    <string name="text_acc_on_desc">Permisos requeridos para ejecutar esta aplicación.</string>
+    <string name="text_wza_tc_desc">Esta aplicación necesita activar el permiso del servicio de accesibilidad antes de poder usarse normalmente, haga clic en Configuración, luego encuentre esta aplicación en la lista de accesibilidad o en otros servicios descargados:</string>
+    <string name="text_jr_auto_clicker">AutoClick Pro</string>
+    <string name="text_jhfw">Activar Servicio</string>
+    <string name="text_wza_wjh">Servicio de accesibilidad no activado</string>
+    <string name="text_accessibility_troubleshooting">Si la aplicación no está disponible, puede apagar el servicio de accesibilidad y volver a encenderlo.\n\nAún no funciona, apague los servicios de accesibilidad, cierre la aplicación, vuelva a abrir la aplicación, vuelva a encender los servicios de accesibilidad.\n\nSolución final: Apague los servicios de accesibilidad y reinicie el dispositivo.</string>
+    
+    <!-- Battery & Auto Start -->
+    <string name="text_battery_optimization">Optimización de Batería</string>
+    <string name="text_sd_desc">Evitar ser limpiado por el sistema.</string>
+    <string name="text_zdqd">Inicio Automático</string>
+    <string name="text_auto_start">Inicio Automático</string>
+    <string name="text_auto_start_on_desc">Evitar ser limpiado por el sistema cuando se ejecuta durante mucho tiempo.</string>
+    
+    <!-- Premium -->
+    <string name="text_gc_auto_clicker_vip">Auto Clicker Pro Premium</string>
+    <string name="text_restore">Restaurar</string>
+    <string name="text_why_join_pre">¿Por qué unirse a Premium?</string>
+    <string name="text_quick_launch_app">Lanzamiento Rápido de App</string>
+    <string name="text_unlock_all_features">Desbloquear Todas las Funciones</string>
+    <string name="text_remove_ads">Eliminar Anuncios</string>
+    <string name="text_select_plan">Seleccionar Plan</string>
+    <string name="text_best_choice">Mejor Opción</string>
+    <string name="text_per_year">por año</string>
+    <string name="text_per_month">por mes</string>
+    <string name="text_upgrade_to_vip">Actualizar a VIP</string>
+    <string name="text_yes_vip">Ya es VIP</string>
+    
+    <!-- Common -->
+    <string name="text_close_floating_window">Cerrar Ventana Flotante</string>
+    <string name="text_ok_go">OK, ENTIENDO</string>
+    <string name="text_language">Idioma</string>
+    <string name="empty_desc">Sin configuración</string>
+    <string name="text_loading_config">Cargando configuración</string>
+    
+    <!-- XPopup -->
+    <string name="xpopup_cancel">Cancelar</string>
+    <string name="xpopup_ok">OK</string>
+    <string name="xpopup_save">Guardar</string>
+    <string name="xpopup_saved_to_gallery">Guardado en álbum</string>
+    <string name="xpopup_image_not_exist">La imagen no existe</string>
+    <string name="xpopup_saved_fail">Error al guardar imagen</string>
+</resources> 

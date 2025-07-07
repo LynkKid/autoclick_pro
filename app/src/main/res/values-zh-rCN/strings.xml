@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">自动点击器专业版</string>
+    <string name="accessibility_service_name">自动点击器专业版</string>
+    <string name="accessibility_service_id">com.hd.auto.click.pro</string>
+    <string name="accessibility_service_description">此应用需要以下权限：\n监控您的活动：所有无障碍服务都需要。\n模拟触摸操作：执行自动触摸操作。请放心，此应用不会收集个人信息。感谢您的支持，祝您使用愉快。</string>
+    
+    <!-- Main UI -->
+    <string name="text_tab_home">首页</string>
+    <string name="text_tab_config">配置</string>
+    <string name="text_tab_vip">高级版</string>
+    <string name="text_settings">设置</string>
+    <string name="text_instructions">说明</string>
+    <string name="text_permissions">权限</string>
+    
+    <!-- Actions -->
+    <string name="text_let_s_start">开始</string>
+    <string name="text_let_s_stop">停止</string>
+    <string name="text_save">保存</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_delete">删除</string>
+    <string name="text_edit">编辑</string>
+    <string name="text_done">完成</string>
+    <string name="text_confirm">确定</string>
+    
+    <!-- Clicker Modes -->
+    <string name="text_clicker_single_mode">单点模式</string>
+    <string name="text_clicker_single_desc">在指定间隔内在同一位置重复点击</string>
+    <string name="text_clicker_multi_mode">多点模式</string>
+    <string name="text_clicker_multi_desc">在多个位置设置一系列点击或滑动</string>
+    <string name="text_clicker_synchronization_mode">同步模式</string>
+    <string name="text_clicker_synchronization_desc">在多个位置设置点击动作以同步点击</string>
+    <string name="text_clicker_record_mode">录制模式</string>
+    <string name="text_clicker_record_mode_desc">直接在屏幕上执行您想要执行的步骤，目标动作将自动添加。</string>
+    <string name="text_clicker_long_mode">长按模式</string>
+    <string name="text_clicker_long_desc">在指定位置设置动作，它将始终执行长按操作</string>
+    <string name="text_clicker_edge_mode">边缘模式</string>
+    <string name="text_clicker_edge_mode_desc">通过改变触摸方向，您可以使其触摸屏幕上的任何位置。</string>
+    
+    <!-- Configuration -->
+    <string name="text_configurations">配置管理</string>
+    <string name="text_save_tips">您保存的脚本将显示在这里</string>
+    <string name="text_create">立即创建</string>
+    <string name="text_start_a_new">创建新配置</string>
+    <string name="text_select_a_config">请选择一个配置</string>
+    <string name="text_config_save_success">保存成功</string>
+    <string name="text_delete_config">删除此配置？</string>
+    <string name="text_edit_name">重命名</string>
+    <string name="text_backup">复制</string>
+    <string name="text_export">导出</string>
+    
+    <!-- Settings -->
+    <string name="text_advanced_settings">高级设置</string>
+    <string name="text_game_mode">游戏模式</string>
+    <string name="tet_game_mode_desc">仅显示开始暂停按钮</string>
+    <string name="text_folded_menu">折叠菜单</string>
+    <string name="automatic_menu_collapse_at_runtime">运行时自动折叠菜单</string>
+    <string name="text_menu_display">菜单显示</string>
+    <string name="text_display_desc">水平显示菜单栏</string>
+    <string name="text_minimise_menu">最小化菜单</string>
+    <string name="text_minmise_desc">将浮动窗口隐藏到屏幕边缘</string>
+    <string name="text_to_avoid_game_detection">避免作弊检测</string>
+    <string name="text_str_random_interval">随机间隔</string>
+    <string name="text_str_random_position">随机位置</string>
+    <string name="text_restore_defaults">恢复默认</string>
+    <string name="text_restore_defaults_desc">按此恢复原始设置</string>
+    
+    <!-- Timing -->
+    <string name="text_delay">延迟</string>
+    <string name="text_delay_desc">延迟时间</string>
+    <string name="text_delay_desc_click_of_next">下次点击之间的时间</string>
+    <string name="text_number_of_times">循环次数</string>
+    <string name="text_repeat_tilte">重复次数</string>
+    <string name="text_repeat_desc">重复此操作的次数</string>
+    <string name="text_times">次</string>
+    <string name="text_never">无限循环</string>
+    <string name="text_hour">小时</string>
+    <string name="text_min">分钟</string>
+    <string name="text_second">秒</string>
+    <string name="text_milliseconds">毫秒</string>
+    
+    <!-- Permissions -->
+    <string name="text_accessibility">无障碍服务</string>
+    <string name="text_wsm_acc">我们使用无障碍服务API来实现应用程序的主要功能</string>
+    <string name="text_xy">1. 为什么使用此服务？\n 我们使用此方法来实现点击和灵活性等基本功能。\n2. 我们是否收集私人数据？\n 我们不会以这种方式收集任何个人数据。如果您同意使用它们，请点击接受按钮并继续</string>
+    <string name="text_disagree">不同意</string>
+    <string name="text_agree">同意</string>
+    <string name="text_go_to_settings">设置</string>
+    <string name="text_accessibility_successfully">无障碍服务启动成功</string>
+    <string name="text_acc_on_desc">运行此应用所需的权限。</string>
+    <string name="text_wza_tc_desc">此应用需要激活无障碍服务权限才能正常使用，请点击设置，然后在无障碍列表或其他已下载服务中找到此应用：</string>
+    <string name="text_jr_auto_clicker">自动点击器专业版</string>
+    <string name="text_jhfw">激活服务</string>
+    <string name="text_wza_wjh">无障碍服务未激活</string>
+    <string name="text_accessibility_troubleshooting">如果应用不可用，您可以关闭无障碍服务并重新打开。\n\n仍然不工作，关闭无障碍服务，关闭应用，重新打开应用，再次打开无障碍服务。\n\n最终解决方案：关闭无障碍服务并重启设备。</string>
+    
+    <!-- Battery & Auto Start -->
+    <string name="text_battery_optimization">电池优化</string>
+    <string name="text_sd_desc">避免被系统清理。</string>
+    <string name="text_zdqd">自动启动</string>
+    <string name="text_auto_start">自动启动</string>
+    <string name="text_auto_start_on_desc">长时间运行时避免被系统清理。</string>
+    
+    <!-- Premium -->
+    <string name="text_gc_auto_clicker_vip">自动点击器专业版高级版</string>
+    <string name="text_restore">恢复</string>
+    <string name="text_why_join_pre">为什么要加入高级版？</string>
+    <string name="text_quick_launch_app">快速启动应用</string>
+    <string name="text_unlock_all_features">解锁所有功能</string>
+    <string name="text_remove_ads">移除广告</string>
+    <string name="text_select_plan">选择计划</string>
+    <string name="text_best_choice">最佳选择</string>
+    <string name="text_per_year">每年</string>
+    <string name="text_per_month">每月</string>
+    <string name="text_upgrade_to_vip">升级到VIP</string>
+    <string name="text_yes_vip">已是VIP</string>
+    
+    <!-- Common -->
+    <string name="text_close_floating_window">关闭浮动窗口</string>
+    <string name="text_ok_go">好的，知道了</string>
+    <string name="text_language">语言</string>
+    <string name="empty_desc">无配置</string>
+    <string name="text_loading_config">加载配置</string>
+    
+    <!-- XPopup -->
+    <string name="xpopup_cancel">取消</string>
+    <string name="xpopup_ok">确定</string>
+    <string name="xpopup_save">保存</string>
+    <string name="xpopup_saved_to_gallery">已保存到相册</string>
+    <string name="xpopup_image_not_exist">图片不存在</string>
+    <string name="xpopup_saved_fail">图片保存失败</string>
+</resources> 

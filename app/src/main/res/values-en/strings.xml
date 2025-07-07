@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoClickerPro</string>
+    <string name="accessibility_service_name">AutoClickerPro</string>
+    <string name="accessibility_service_id">com.hd.auto.click.pro</string>
+    <string name="accessibility_service_description">This app requires the following permissions:\nMonitor your activity: Required for all accessibility services.\nSimulate touch actions: Perform automatic touch operations. Rest assured that this app does not collect personal information. Thank you for your support, enjoy using it.</string>
+    
+    <!-- Main UI -->
+    <string name="text_tab_home">Home</string>
+    <string name="text_tab_config">Config</string>
+    <string name="text_tab_vip">Premium</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_instructions">Instructions</string>
+    <string name="text_permissions">Permissions</string>
+    
+    <!-- Actions -->
+    <string name="text_let_s_start">START</string>
+    <string name="text_let_s_stop">STOP</string>
+    <string name="text_save">Save</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_edit">Edit</string>
+    <string name="text_done">Done</string>
+    <string name="text_confirm">OK</string>
+    
+    <!-- Clicker Modes -->
+    <string name="text_clicker_single_mode">Single Point Mode</string>
+    <string name="text_clicker_single_desc">Click repeatedly at the same position at specified intervals</string>
+    <string name="text_clicker_multi_mode">Multi Point Mode</string>
+    <string name="text_clicker_multi_desc">Set up a series of clicks or swipes at multiple positions</string>
+    <string name="text_clicker_synchronization_mode">Synchronization Mode</string>
+    <string name="text_clicker_synchronization_desc">Set click actions at multiple positions to synchronize clicks</string>
+    <string name="text_clicker_record_mode">Record Mode</string>
+    <string name="text_clicker_record_mode_desc">Perform the steps you want to perform directly on the screen and target actions will be added automatically.</string>
+    <string name="text_clicker_long_mode">Press and Hold Mode</string>
+    <string name="text_clicker_long_desc">Set an action at the specified position, it will always perform a press and hold operation</string>
+    <string name="text_clicker_edge_mode">Edge Mode</string>
+    <string name="text_clicker_edge_mode_desc">By changing the direction of the touch, you can make it touch anywhere on the screen.</string>
+    
+    <!-- Configuration -->
+    <string name="text_configurations">Config Management</string>
+    <string name="text_save_tips">Your saved scripts will be displayed here</string>
+    <string name="text_create">Create Now</string>
+    <string name="text_start_a_new">Create New Config</string>
+    <string name="text_select_a_config">Please select a configuration</string>
+    <string name="text_config_save_success">Saved successfully</string>
+    <string name="text_delete_config">Delete this configuration?</string>
+    <string name="text_edit_name">Rename</string>
+    <string name="text_backup">Copy</string>
+    <string name="text_export">Export</string>
+    
+    <!-- Settings -->
+    <string name="text_advanced_settings">Advanced Settings</string>
+    <string name="text_game_mode">Game Mode</string>
+    <string name="tet_game_mode_desc">Only show start pause button</string>
+    <string name="text_folded_menu">Folded Menu</string>
+    <string name="automatic_menu_collapse_at_runtime">Automatically collapse menu when running</string>
+    <string name="text_menu_display">Menu Display</string>
+    <string name="text_display_desc">Display menu bar horizontally</string>
+    <string name="text_minimise_menu">Minimize Menu</string>
+    <string name="text_minmise_desc">Hide floating window to screen edge</string>
+    <string name="text_to_avoid_game_detection">Avoid Cheat Detection</string>
+    <string name="text_str_random_interval">Random Interval</string>
+    <string name="text_str_random_position">Random Position</string>
+    <string name="text_restore_defaults">Restore Defaults</string>
+    <string name="text_restore_defaults_desc">Press to restore original</string>
+    
+    <!-- Timing -->
+    <string name="text_delay">Delay</string>
+    <string name="text_delay_desc">Delay time</string>
+    <string name="text_delay_desc_click_of_next">Time between next clicks</string>
+    <string name="text_number_of_times">Loop Count</string>
+    <string name="text_repeat_tilte">Repeat Count</string>
+    <string name="text_repeat_desc">How many times to repeat this action</string>
+    <string name="text_times">times</string>
+    <string name="text_never">Infinite Loop</string>
+    <string name="text_hour">h</string>
+    <string name="text_min">m</string>
+    <string name="text_second">s</string>
+    <string name="text_milliseconds">Milliseconds</string>
+    
+    <!-- Permissions -->
+    <string name="text_accessibility">Accessibility Service</string>
+    <string name="text_wsm_acc">We use Accessibility Services API to implement the main functions of the application</string>
+    <string name="text_xy">1. Why use this service?\n We use this method to implement basic functions such as clicking and flexibility. \n2. Do we collect private data?\n We will not collect any personal data in this way. If you agree to use them, please click the accept button and continue</string>
+    <string name="text_disagree">Disagree</string>
+    <string name="text_agree">Agree</string>
+    <string name="text_go_to_settings">Settings</string>
+    <string name="text_accessibility_successfully">Accessibility service started successfully</string>
+    <string name="text_acc_on_desc">Required permissions to run this app.</string>
+    <string name="text_wza_tc_desc">This app needs to activate accessibility service permission before it can be used normally, please click Settings, then find this app in the accessibility list or in other downloaded services:</string>
+    <string name="text_jr_auto_clicker">AutoClick Pro</string>
+    <string name="text_jhfw">Activate Service</string>
+    <string name="text_wza_wjh">Accessibility service not activated</string>
+    <string name="text_accessibility_troubleshooting">If the app is not available, you can turn off the accessibility service and turn it back on.\n\nStill not working, turn off accessibility services, close the app, reopen the app, turn on accessibility services again.\n\nFinal solution: Turn off accessibility services and restart the device.</string>
+    
+    <!-- Battery & Auto Start -->
+    <string name="text_battery_optimization">Battery Optimization</string>
+    <string name="text_sd_desc">Avoid being cleaned by the system.</string>
+    <string name="text_zdqd">Auto Start</string>
+    <string name="text_auto_start">Auto Start</string>
+    <string name="text_auto_start_on_desc">Avoid being cleaned by the system when running for a long time.</string>
+    
+    <!-- Premium -->
+    <string name="text_gc_auto_clicker_vip">Auto Clicker Pro Premium</string>
+    <string name="text_restore">Restore</string>
+    <string name="text_why_join_pre">Why Join Premium?</string>
+    <string name="text_quick_launch_app">Quick Launch App</string>
+    <string name="text_unlock_all_features">Unlock All Features</string>
+    <string name="text_remove_ads">Remove Ads</string>
+    <string name="text_select_plan">Select Plan</string>
+    <string name="text_best_choice">Best Choice</string>
+    <string name="text_per_year">per year</string>
+    <string name="text_per_month">per month</string>
+    <string name="text_upgrade_to_vip">Upgrade to VIP</string>
+    <string name="text_yes_vip">Already VIP</string>
+    
+    <!-- Common -->
+    <string name="text_close_floating_window">Close Floating Window</string>
+    <string name="text_ok_go">OK, GOT IT</string>
+    <string name="text_language">Language</string>
+    <string name="empty_desc">No configuration</string>
+    <string name="text_loading_config">Loading configuration</string>
+    
+    <!-- XPopup -->
+    <string name="xpopup_cancel">Cancel</string>
+    <string name="xpopup_ok">OK</string>
+    <string name="xpopup_save">Save</string>
+    <string name="xpopup_saved_to_gallery">Saved to album</string>
+    <string name="xpopup_image_not_exist">Image not exist</string>
+    <string name="xpopup_saved_fail">Image save failed</string>
+</resources> 

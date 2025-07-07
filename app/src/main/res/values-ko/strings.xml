@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoClickerPro</string>
+    <string name="accessibility_service_name">AutoClickerPro</string>
+    <string name="accessibility_service_id">com.hd.auto.click.pro</string>
+    <string name="accessibility_service_description">이 앱에는 다음 권한이 필요합니다:\n활동 모니터링: 모든 접근성 서비스에 필요합니다.\n터치 작업 시뮬레이션: 자동 터치 작업을 수행합니다. 이 앱이 개인 정보를 수집하지 않음을 보장합니다. 지원해 주셔서 감사합니다, 즐거운 시간 보내세요.</string>
+    
+    <!-- Main UI -->
+    <string name="text_tab_home">홈</string>
+    <string name="text_tab_config">설정</string>
+    <string name="text_tab_vip">프리미엄</string>
+    <string name="text_settings">설정</string>
+    <string name="text_instructions">설명</string>
+    <string name="text_permissions">권한</string>
+    
+    <!-- Actions -->
+    <string name="text_let_s_start">시작</string>
+    <string name="text_let_s_stop">중지</string>
+    <string name="text_save">저장</string>
+    <string name="text_cancel">취소</string>
+    <string name="text_delete">삭제</string>
+    <string name="text_edit">편집</string>
+    <string name="text_done">완료</string>
+    <string name="text_confirm">확인</string>
+    
+    <!-- Clicker Modes -->
+    <string name="text_clicker_single_mode">단일 포인트 모드</string>
+    <string name="text_clicker_single_desc">지정된 간격으로 같은 위치를 반복적으로 클릭</string>
+    <string name="text_clicker_multi_mode">다중 포인트 모드</string>
+    <string name="text_clicker_multi_desc">여러 위치에서 클릭 또는 스와이프 시리즈 설정</string>
+    <string name="text_clicker_synchronization_mode">동기화 모드</string>
+    <string name="text_clicker_synchronization_desc">여러 위치에서 클릭 작업을 설정하여 클릭을 동기화</string>
+    <string name="text_clicker_record_mode">녹화 모드</string>
+    <string name="text_clicker_record_mode_desc">화면에서 직접 수행하고 싶은 단계를 수행하면 대상 작업이 자동으로 추가됩니다.</string>
+    <string name="text_clicker_long_mode">길게 누르기 모드</string>
+    <string name="text_clicker_long_desc">지정된 위치에 작업을 설정하면 항상 길게 누르기 작업을 수행</string>
+    <string name="text_clicker_edge_mode">엣지 모드</string>
+    <string name="text_clicker_edge_mode_desc">터치 방향을 변경하여 화면 어디든 터치할 수 있게 합니다.</string>
+    
+    <!-- Configuration -->
+    <string name="text_configurations">설정 관리</string>
+    <string name="text_save_tips">저장된 스크립트가 여기에 표시됩니다</string>
+    <string name="text_create">지금 만들기</string>
+    <string name="text_start_a_new">새 설정 만들기</string>
+    <string name="text_select_a_config">설정을 선택해 주세요</string>
+    <string name="text_config_save_success">성공적으로 저장됨</string>
+    <string name="text_delete_config">이 설정을 삭제하시겠습니까?</string>
+    <string name="text_edit_name">이름 변경</string>
+    <string name="text_backup">복사</string>
+    <string name="text_export">내보내기</string>
+    
+    <!-- Settings -->
+    <string name="text_advanced_settings">고급 설정</string>
+    <string name="text_game_mode">게임 모드</string>
+    <string name="tet_game_mode_desc">시작 일시정지 버튼만 표시</string>
+    <string name="text_folded_menu">접힌 메뉴</string>
+    <string name="automatic_menu_collapse_at_runtime">실행 시 메뉴를 자동으로 접기</string>
+    <string name="text_menu_display">메뉴 표시</string>
+    <string name="text_display_desc">메뉴 바를 수평으로 표시</string>
+    <string name="text_minimise_menu">메뉴 최소화</string>
+    <string name="text_minmise_desc">플로팅 창을 화면 가장자리에 숨기기</string>
+    <string name="text_to_avoid_game_detection">치트 감지 방지</string>
+    <string name="text_str_random_interval">랜덤 간격</string>
+    <string name="text_str_random_position">랜덤 위치</string>
+    <string name="text_restore_defaults">기본값 복원</string>
+    <string name="text_restore_defaults_desc">원본으로 복원하려면 누르세요</string>
+    
+    <!-- Timing -->
+    <string name="text_delay">지연</string>
+    <string name="text_delay_desc">지연 시간</string>
+    <string name="text_delay_desc_click_of_next">다음 클릭 사이의 시간</string>
+    <string name="text_number_of_times">루프 카운터</string>
+    <string name="text_repeat_tilte">반복 카운터</string>
+    <string name="text_repeat_desc">이 작업을 몇 번 반복할지</string>
+    <string name="text_times">회</string>
+    <string name="text_never">무한 루프</string>
+    <string name="text_hour">시간</string>
+    <string name="text_min">분</string>
+    <string name="text_second">초</string>
+    <string name="text_milliseconds">밀리초</string>
+    
+    <!-- Permissions -->
+    <string name="text_accessibility">접근성 서비스</string>
+    <string name="text_wsm_acc">앱의 주요 기능을 구현하기 위해 접근성 서비스 API를 사용합니다</string>
+    <string name="text_xy">1. 왜 이 서비스를 사용하나요?\n 클릭과 유연성 같은 기본 기능을 구현하기 위해 이 방법을 사용합니다. \n2. 개인 데이터를 수집하나요?\n 이 방법으로 개인 데이터를 수집하지 않습니다. 사용에 동의하시면 동의 버튼을 클릭하고 계속하세요</string>
+    <string name="text_disagree">동의하지 않음</string>
+    <string name="text_agree">동의</string>
+    <string name="text_go_to_settings">설정</string>
+    <string name="text_accessibility_successfully">접근성 서비스가 성공적으로 시작되었습니다</string>
+    <string name="text_acc_on_desc">이 앱을 실행하는 데 필요한 권한.</string>
+    <string name="text_wza_tc_desc">이 앱은 정상적으로 사용하기 전에 접근성 서비스 권한을 활성화해야 합니다. 설정을 클릭한 다음 접근성 목록이나 기타 다운로드된 서비스에서 이 앱을 찾으세요:</string>
+    <string name="text_jr_auto_clicker">AutoClick Pro</string>
+    <string name="text_jhfw">서비스 활성화</string>
+    <string name="text_wza_wjh">접근성 서비스가 활성화되지 않음</string>
+    <string name="text_accessibility_troubleshooting">앱을 사용할 수 없는 경우 접근성 서비스를 끄고 다시 켤 수 있습니다.\n\n여전히 작동하지 않으면 접근성 서비스를 끄고, 앱을 닫고, 앱을 다시 열고, 접근성 서비스를 다시 켜세요.\n\n최종 해결책: 접근성 서비스를 끄고 기기를 재시작하세요.</string>
+    
+    <!-- Battery & Auto Start -->
+    <string name="text_battery_optimization">배터리 최적화</string>
+    <string name="text_sd_desc">시스템에 의해 정리되는 것을 방지합니다.</string>
+    <string name="text_zdqd">자동 시작</string>
+    <string name="text_auto_start">자동 시작</string>
+    <string name="text_auto_start_on_desc">오래 실행할 때 시스템에 의해 정리되는 것을 방지합니다.</string>
+    
+    <!-- Premium -->
+    <string name="text_gc_auto_clicker_vip">Auto Clicker Pro 프리미엄</string>
+    <string name="text_restore">복원</string>
+    <string name="text_why_join_pre">왜 프리미엄에 가입하나요?</string>
+    <string name="text_quick_launch_app">앱 빠른 실행</string>
+    <string name="text_unlock_all_features">모든 기능 잠금 해제</string>
+    <string name="text_remove_ads">광고 제거</string>
+    <string name="text_select_plan">플랜 선택</string>
+    <string name="text_best_choice">최고의 선택</string>
+    <string name="text_per_year">연간</string>
+    <string name="text_per_month">월간</string>
+    <string name="text_upgrade_to_vip">VIP로 업그레이드</string>
+    <string name="text_yes_vip">이미 VIP</string>
+    
+    <!-- Common -->
+    <string name="text_close_floating_window">플로팅 창 닫기</string>
+    <string name="text_ok_go">확인, 이해했습니다</string>
+    <string name="text_language">언어</string>
+    <string name="empty_desc">설정 없음</string>
+    <string name="text_loading_config">설정 로딩 중</string>
+    
+    <!-- XPopup -->
+    <string name="xpopup_cancel">취소</string>
+    <string name="xpopup_ok">확인</string>
+    <string name="xpopup_save">저장</string>
+    <string name="xpopup_saved_to_gallery">갤러리에 저장됨</string>
+    <string name="xpopup_image_not_exist">이미지가 존재하지 않습니다</string>
+    <string name="xpopup_saved_fail">이미지 저장 실패</string>
+</resources> 
