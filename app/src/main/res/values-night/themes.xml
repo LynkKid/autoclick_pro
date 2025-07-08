@@ -2,6 +2,24 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.AutoClick" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/color_5783e5</item>
+        <item name="colorPrimaryVariant">@color/color_5783e5</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/color_f2994a</item>
+        <item name="colorSecondaryVariant">@color/color_f2994a</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/color_484649</item>
+        <item name="colorSurface">@color/color_484649</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnBackground">@color/white</item>
+        
+        <!-- Áp dụng style cho toolbar navigation button -->
+        <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+    </style>
+
+    <style name="Theme.AutoClick" parent="Base.Theme.AutoClick">
+        <item name="android:statusBarColor">@color/color_484649</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>

@@ -37,3 +37,24 @@
 -keepclassmembers class * {
     @android.webkit.JavascriptInterface <methods>;
 }
+
+# Keep XPopup library
+-keep class com.lxj.xpopup.** { *; }
+
+# Keep utility classes
+-keep class com.auto.click.appcomponents.utility.** { *; }
+
+# Keep Gson
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn sun.misc.**
+-keep class com.google.gson.** { *; }
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+
+# Keep Retrofit
+-keepattributes Signature
+-keepattributes Exceptions
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }

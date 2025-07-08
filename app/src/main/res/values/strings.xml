@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">AutoClickerPro</string>
-    <string name="accessibility_service_name">AutoClickerPro</string>
-    <string name="accessibility_service_id">com.hd.auto.click.pro</string>
+    <string name="app_name">Auto Click</string>
+    <string name="accessibility_service_name">Auto Click</string>
+    <string name="accessibility_service_id">com.sieuthi.click.sound.prank</string>
     <string name="accessibility_service_description">Ứng dụng yêu cầu các quyền sau:\nNhận hoạt động của bạn: Yêu cầu bắt buộc đối với tất cả dịch vụ trợ năng.\nMô phỏng thao tác chạm: Thực hiện các thao tác chạm tự động. Hãy yên tâm rằng ứng dụng này không thu thập thông tin cá nhân. Cảm ơn đã ủng hộ, chúc bạn sử dụng vui vẻ.</string>
     <string name="text_advanced_settings">Cài đặt nâng cao</string>
     <string name="text_game_mode">Chế độ chơi</string>

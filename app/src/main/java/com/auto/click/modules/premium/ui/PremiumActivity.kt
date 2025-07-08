@@ -43,7 +43,7 @@ class PremiumActivity : AppCompatActivity() {
                 // Nếu không mở được Google Play Store, thử mở bằng market://
                 try {
                     val marketIntent = Intent(Intent.ACTION_VIEW, "market://subscriptions".toUri())
-                    marketIntent.setPackage("com.android.vending")
+                    marketIntent.setPackage("com.sieuthi.click.sound.prank")
                     startActivity(marketIntent)
                 } catch (_: Exception) {
                 }
@@ -52,7 +52,7 @@ class PremiumActivity : AppCompatActivity() {
 
         binding.tvTerms.setSafeOnClickListener {
             val intent = Intent(this, WebActivity::class.java).apply {
-                putExtra("url", "https://www.gcautoclicker.com/recoverdeleted_terms.html")
+                putExtra("url", "https://sieuthichauauprivacypolicy.blogspot.com/2025/07/terms-of-use.html")
                 putExtra("title", "End User License Agreement")
             }
             startActivity(intent)

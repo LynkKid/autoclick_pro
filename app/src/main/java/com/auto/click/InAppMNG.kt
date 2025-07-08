@@ -3,8 +3,8 @@ package com.auto.click
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.util.Log
+import androidx.core.net.toUri
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.android.billingclient.api.BillingClient
 import com.android.billingclient.api.ProductDetailsResponseListener
@@ -13,7 +13,6 @@ import com.anjlab.android.iab.v3.BillingProcessor
 import com.anjlab.android.iab.v3.BillingProcessor.IPurchasesResponseListener
 import com.anjlab.android.iab.v3.PurchaseInfo
 import com.google.common.collect.ImmutableList
-import androidx.core.net.toUri
 
 
 class InAppMNG {
@@ -23,12 +22,12 @@ class InAppMNG {
     }
 
     companion object : BillingProcessor.IBillingHandler {
-        public val INAPP_KEY = "com.hd.gba.psa.emulator.lifetime"
-        public val SUBS_KEY_1 = "com.hd.gba.psa.emulator.weekly"
-        public val SUBS_KEY_2 = "com.hd.gba.psa.emulator.monthly"
+        public val INAPP_KEY = ""
+        public val SUBS_KEY_1 = "com.sieuthi.click.yearly"
+        public val SUBS_KEY_2 = "com.sieuthi.click.monthly"
 
         private val LICENSE_KEY =
-            "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgiTdooXItyWPzPm60aFXZr43fsJx90Ye3WZs+APIc0RGlmILDvIFUxsATwPJYViHuQJcd1kL4JV1+oRGuvB1R7YpiQdjyYeEv9+TTmNgPoz8Wf8VVxp2lH9iJw9oLPxXckohjk5s4Gt1zyiXdz8NuNRU5kk5s2T7oJaYszyEJOT9/qQc+s3lYvbE/yQcY8HIFH4oMRO9QTP/glbBlzB5TOl6l3Q0wc2oNMDKQbu9wLYxtR56r7TBIaoZS+5b1sPHijxp4NAlo02KCCBd4ObvoDt8fpZGdaxIY43uJpVGMicsVRvf1yx5GtoBTwFU2knVCPPkjUUHgSsYgrvq+CS42QIDAQAB"
+            "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt5vZHSMWdbcD23wqZN6k/1F5Chbnh1OiCQuZEtwmy/9ipqP3f8DESj+y804ABQ/4yMU0Pv+PkBxxZx7Np0XXLuLNwG5BZtalzfWpDL5G8XVariJhyAXqypqS1lNr23xiN9ttSfNle4xAd5G1ehJeqUTP6KtGKHgDdgppvwPJIHBGe282VwOS2aOTqF9KsiZBAQQkAgsPpNPvdt7PE9sdkMDCU2N4Gc4KJYToyxUpU7VxtV9aLA4HMi3TjLH08UJ8ULX9VtMTO18v4E1jrDDTYwRTLobMZefjxshoy/xiaTw2AdQwVb3IYstN+SHCundMNOnf3U+cUJS9wFBrfizEqwIDAQAB"
         private var inAppListener: InAppListener? = null
 
         var bp: BillingProcessor? = null

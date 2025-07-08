@@ -6,7 +6,7 @@ plugins {
 android {
     signingConfigs {
         create("release") {
-            storeFile = file("/Users/thaiph/Downloads/all2keystore_123456.keystore")
+            storeFile = file("/Users/thaiph/Downloads/keysieuthi123456.keystore")
             storePassword = "123456"
             keyAlias = "key0"
             keyPassword = "123456"
@@ -16,7 +16,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.hd.gba.psa.emulator"
+        applicationId = "com.sieuthi.click.sound.prank"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -46,6 +46,12 @@ android {
 
     buildFeatures {
         viewBinding = true
+    }
+    
+    bundle {
+        language {
+            enableSplit = true
+        }
     }
 }
 

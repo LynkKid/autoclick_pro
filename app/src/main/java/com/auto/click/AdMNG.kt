@@ -28,7 +28,7 @@ class AdMNG {
         private var handler: Handler? = null
         private var lastShowTime: Long = 0
         private var distance: Int = 0 * 1000 // in ms
-        private const val AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
+        private const val AD_UNIT_ID = "ca-app-pub-4922850260251086/8978599447"
 
         fun initWith(context: Context) {
             MobileAds.initialize(context)
