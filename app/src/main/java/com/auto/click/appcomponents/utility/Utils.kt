@@ -34,6 +34,8 @@ import com.google.android.material.switchmaterial.SwitchMaterial
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.ByteArrayOutputStream
+import java.text.NumberFormat
+import java.util.Currency
 
 enum class OptionDelay(val value: Int) {
     MILLISECONDS(0),    // Milli giây
@@ -321,6 +323,12 @@ object Utils {
                 onActionPro(false)
             }
         }
+    }
+
+    fun formatCurrency(amount: Double, currencyCode: String): String {
+        val format = NumberFormat.getCurrencyInstance()
+        format.currency = Currency.getInstance(currencyCode)
+        return format.format(amount)
     }
 }
 

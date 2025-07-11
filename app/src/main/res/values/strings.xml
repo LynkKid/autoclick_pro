@@ -217,4 +217,10 @@
     <string name="text_sub_desc5">5. Nếu bạn muốn hủy đăng ký, bạn có thể thực hiện việc này qua Google Play.</string>
     <string name="text_ok_go">OK, ĐÃ RỒI</string>
     <string name="text_language">Ngôn ngữ</string>
+    <string name="price_of_month">%1$s/tháng</string>
+    <string name="price_of_year">%1$s/năm</string>
+    <string name="free_trial">Dùng thử miễn phí</string>
+    <string name="buy">Mua gói này</string>
+    <string name="subscription_after_trial_of_year">%1$s /năm sau 3 ngày dùng thử MIỄN PHÍ</string>
+    <string name="subscription_after_trial_of_month">%1$s /tháng sau 3 ngày dùng thử MIỄN PHÍ</string>
 </resources>

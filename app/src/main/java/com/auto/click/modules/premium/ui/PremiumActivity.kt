@@ -1,5 +1,6 @@
 package com.auto.click.modules.premium.ui
 
+import android.annotation.SuppressLint
 import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +13,7 @@ import com.auto.click.InAppMNG
 import com.auto.click.R
 import com.auto.click.WebActivity
 import com.auto.click.appcomponents.utility.Utils.dp2px
+import com.auto.click.appcomponents.utility.Utils.formatCurrency
 import com.auto.click.appcomponents.utility.setSafeOnClickListener
 import com.auto.click.databinding.ActivityPremiumBinding
 
@@ -52,17 +54,20 @@ class PremiumActivity : AppCompatActivity() {
 
         binding.tvTerms.setSafeOnClickListener {
             val intent = Intent(this, WebActivity::class.java).apply {
-                putExtra("url", "https://sieuthichauauprivacypolicy.blogspot.com/2025/07/terms-of-use.html")
+                putExtra(
+                    "url",
+                    "https://sieuthichauauprivacypolicy.blogspot.com/2025/07/terms-of-use.html"
+                )
                 putExtra("title", "End User License Agreement")
             }
             startActivity(intent)
         }
 
         binding.lineSubYear.setSafeOnClickListener {
-            buyProduct(InAppMNG.SUBS_KEY_2, "SUBS")
+            buyProduct(InAppMNG.SUBS_KEY_1, "SUBS")
         }
         binding.lineSubMonth.setSafeOnClickListener {
-            buyProduct(InAppMNG.SUBS_KEY_1, "SUBS")
+            buyProduct(InAppMNG.SUBS_KEY_2, "SUBS")
         }
 
         binding.tvRestore.setSafeOnClickListener {
@@ -99,6 +104,7 @@ class PremiumActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     fun updatePrice(products: MutableList<ProductDetails>?) {
         products?.let {
             for (product in products) {
@@ -115,15 +121,25 @@ class PremiumActivity : AppCompatActivity() {
                         ?.pricingPhaseList
                         ?.firstOrNull { it.priceAmountMicros > 0 }
                         ?.formattedPrice
-                    binding.tvYearPrice.text = price
                     val price1 = product.subscriptionOfferDetails?.get(0)?.pricingPhases
                         ?.pricingPhaseList
                         ?.firstOrNull { it.priceAmountMicros > 0 }?.priceAmountMicros
-                    binding.tvByMonthPrice.text = "(${price1.toString().toInt() / 12}/month)"
+                    val currencyCode = product.subscriptionOfferDetails?.get(0)?.pricingPhases
+                        ?.pricingPhaseList
+                        ?.firstOrNull { it.priceAmountMicros > 0 }?.priceCurrencyCode
+                    binding.tvYearPrice.text = price
+                    binding.tvByMonthPrice.text = getString(
+                        R.string.price_of_month, formatCurrency(
+                            (price1 ?: 0) / 1_000_000.0 / 12,
+                            currencyCode ?: "USD"
+                        )
+                    )
+                    binding.tvYearSubPrice.text =
+                        getString(R.string.subscription_after_trial_of_year, price)
                     if (hasFreeTrial) {
-                        binding.tvYearSub.text = "FREE TRIAL"
+                        binding.tvYearSub.text = getString(R.string.free_trial)
                     } else {
-                        binding.tvYearSub.text = "BUY"
+                        binding.tvYearSub.text = getString(R.string.buy)
                     }
                 }
                 if (product.productId == InAppMNG.SUBS_KEY_2) {
@@ -142,12 +158,22 @@ class PremiumActivity : AppCompatActivity() {
                     val price1 = product.subscriptionOfferDetails?.get(0)?.pricingPhases
                         ?.pricingPhaseList
                         ?.firstOrNull { it.priceAmountMicros > 0 }?.priceAmountMicros
+                    val currencyCode = product.subscriptionOfferDetails?.get(0)?.pricingPhases
+                        ?.pricingPhaseList
+                        ?.firstOrNull { it.priceAmountMicros > 0 }?.priceCurrencyCode
                     binding.tvMonthPrice.text = price
-                    binding.tvByYearPrice.text = "(${price1.toString().toInt() * 12}/year)"
+                    binding.tvByYearPrice.text = getString(
+                        R.string.price_of_year, formatCurrency(
+                            (price1 ?: 0) / 1_000_000.0 * 12,
+                            currencyCode ?: "USD"
+                        )
+                    )
+                    binding.tvMonthSubPrice.text =
+                        getString(R.string.subscription_after_trial_of_month, price)
                     if (hasFreeTrial) {
-                        binding.tvYearSub.text = "FREE TRIAL"
+                        binding.tvMonthSub.text = getString(R.string.free_trial)
                     } else {
-                        binding.tvYearSub.text = "BUY"
+                        binding.tvMonthSub.text = getString(R.string.buy)
                     }
                 }
             }
@@ -227,7 +253,7 @@ class PremiumActivity : AppCompatActivity() {
         progressDialog?.setCancelable(true)
         progressDialog?.setMessage("Restoring purchases...")
         progressDialog?.show()
-        
+
         InAppMNG.restorePurchases(object : InAppMNG.InAppListener {
             override fun onBillingError(errorCode: Int, error: Throwable?) {
                 progressDialog?.dismiss()
@@ -246,8 +272,8 @@ class PremiumActivity : AppCompatActivity() {
                 progressDialog = null
                 toast?.cancel()
                 toast = Toast.makeText(
-                    applicationContext, 
-                    "Restore Success! Premium features restored.", 
+                    applicationContext,
+                    "Restore Success! Premium features restored.",
                     Toast.LENGTH_SHORT
                 )
                 toast?.show()

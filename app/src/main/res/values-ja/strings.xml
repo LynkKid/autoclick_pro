@@ -242,4 +242,10 @@
     <string name="text_anti_detection">検出防止設定</string>
     <string name="text_click_intervals_tips">40ミリ秒未満のクリック間隔は、デバイスがフリーズしたり異常終了したりする可能性があります。</string>
     <string name="text_save_this_config">設定名を編集</string>
+    <string name="price_of_month">%1$s/月</string>
+    <string name="price_of_year">%1$s/年</string>
+    <string name="free_trial">無料トライアル</string>
+    <string name="buy">このプランを購入</string>
+    <string name="subscription_after_trial_of_year">%1$s /年（3日間の無料トライアル後）</string>
+    <string name="subscription_after_trial_of_month">%1$s /月（3日間の無料トライアル後）</string>
 </resources> 

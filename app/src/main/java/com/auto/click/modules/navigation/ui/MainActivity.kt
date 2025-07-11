@@ -1,17 +1,23 @@
 package com.auto.click.modules.navigation.ui
 
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStore
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.auto.click.AdMNG
 import com.auto.click.AutoClickService
+import com.auto.click.InAppMNG
 import com.auto.click.MyApplication
 import com.auto.click.R
 import com.auto.click.appcomponents.utility.Utils
@@ -43,6 +49,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        LocalBroadcastManager.getInstance(this).registerReceiver(broadcastReceiver, IntentFilter("Action_InApp"))
+        if (InAppMNG.isProVersion()) {
+            binding.containerViewAd.visibility = View.GONE
+        } else {
+            binding.containerViewAd.visibility = View.VISIBLE
+        }
         binding.bottomNavigation.itemIconTintList = null
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             mainViewModel.onNavigationItemSelected(
@@ -95,6 +107,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         Log.d("PHT", "onDestroy")
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(broadcastReceiver)
         super.onDestroy()
+    }
+
+    private val broadcastReceiver = object: BroadcastReceiver() {
+        override fun onReceive(context: Context?, intent: Intent?) {
+            if (intent?.action.equals("Action_InApp")) {
+                if (InAppMNG.isProVersion()) {
+                    binding.containerViewAd.visibility = View.GONE
+                } else {
+                    binding.containerViewAd.visibility = View.VISIBLE
+                }
+            }
+        }
     }
 }

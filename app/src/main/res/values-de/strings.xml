@@ -242,4 +242,10 @@
     <string name="text_anti_detection">Anti-Erkennungseinstellungen</string>
     <string name="text_click_intervals_tips">Klickintervalle unter 40 Millisekunden können dazu führen, dass Ihr Gerät einfriert oder abnormal beendet wird.</string>
     <string name="text_save_this_config">Konfigurationsname bearbeiten</string>
+    <string name="price_of_month">%1$s/Monat</string>
+    <string name="price_of_year">%1$s/Jahr</string>
+    <string name="free_trial">Kostenlose Testversion</string>
+    <string name="buy">Diesen Plan kaufen</string>
+    <string name="subscription_after_trial_of_year">%1$s /Jahr nach 3 Tagen KOSTENLOSER Testversion</string>
+    <string name="subscription_after_trial_of_month">%1$s /Monat nach 3 Tagen KOSTENLOSER Testversion</string>
 </resources> 

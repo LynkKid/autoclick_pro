@@ -242,4 +242,10 @@
     <string name="text_anti_detection">Configuración anti-detección</string>
     <string name="text_click_intervals_tips">Los intervalos de clic por debajo de 40 milisegundos pueden hacer que tu dispositivo se congele o salga anormalmente.</string>
     <string name="text_save_this_config">Editar nombre de configuración</string>
+    <string name="price_of_month">%1$s/mes</string>
+    <string name="price_of_year">%1$s/año</string>
+    <string name="free_trial">Prueba Gratuita</string>
+    <string name="buy">Comprar este plan</string>
+    <string name="subscription_after_trial_of_year">%1$s /año después de 3 días de prueba GRATUITA</string>
+    <string name="subscription_after_trial_of_month">%1$s /mes después de 3 días de prueba GRATUITA</string>
 </resources> 

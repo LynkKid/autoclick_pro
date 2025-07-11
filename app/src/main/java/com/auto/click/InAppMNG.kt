@@ -68,7 +68,6 @@ class InAppMNG {
                 }
             }
             return tempPro
-//            return true
         }
 
         fun isSubs(): Boolean {
@@ -140,13 +139,19 @@ class InAppMNG {
                     Log.d("CUONGNN", "restorePurchases onPurchasesSuccess")
                     // Cập nhật trạng thái premium sau khi restore
                     tempPro = isProVersion()
-                    // Gửi broadcast để thông báo cho các component khác
-                    context?.let {
-                        LocalBroadcastManager.getInstance(it).sendBroadcast(Intent("Action_InApp"))
+                    if(tempPro) {
+                        // Gửi broadcast để thông báo cho các component khác
+                        context?.let {
+                            LocalBroadcastManager.getInstance(it)
+                                .sendBroadcast(Intent("Action_InApp"))
+                        }
+                        // Gọi listener nếu có
+                        inAppListener?.onProductPurchased()
+                        inAppListener = null
+                    }else{
+                        inAppListener?.onBillingError(-1, null)
+                        inAppListener = null
                     }
-                    // Gọi listener nếu có
-                    inAppListener?.onProductPurchased()
-                    inAppListener = null
                 }
 
                 override fun onPurchasesError() {

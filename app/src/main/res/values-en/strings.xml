@@ -242,4 +242,10 @@
     <string name="text_anti_detection">Anti-detection settings</string>
     <string name="text_click_intervals_tips">Click intervals below 40 milliseconds may cause your device to freeze or exit abnormally.</string>
     <string name="text_save_this_config">Edit config name</string>
+    <string name="price_of_month">%1$s/month</string>
+    <string name="price_of_year">%1$s/year</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="buy">Buy this plan</string>
+    <string name="subscription_after_trial_of_year">%1$s /year after 3 days FREE trial</string>
+    <string name="subscription_after_trial_of_month">%1$s /month after 3 days FREE trial</string>
 </resources> 

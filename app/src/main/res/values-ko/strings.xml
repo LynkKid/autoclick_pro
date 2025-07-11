@@ -242,4 +242,10 @@
     <string name="text_anti_detection">탐지 방지 설정</string>
     <string name="text_click_intervals_tips">40밀리초 미만의 클릭 간격은 장치가 멈추거나 비정상적으로 종료될 수 있습니다.</string>
     <string name="text_save_this_config">설정 이름 편집</string>
+    <string name="price_of_month">%1$s/월</string>
+    <string name="price_of_year">%1$s/년</string>
+    <string name="free_trial">무료 체험판</string>
+    <string name="buy">이 플랜 구매</string>
+    <string name="subscription_after_trial_of_year">%1$s /년 (3일 무료 체험 후)</string>
+    <string name="subscription_after_trial_of_month">%1$s /월 (3일 무료 체험 후)</string>
 </resources> 

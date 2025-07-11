@@ -242,4 +242,10 @@
     <string name="text_anti_detection">Paramètres anti-détection</string>
     <string name="text_click_intervals_tips">Les intervalles de clic en dessous de 40 millisecondes peuvent faire que votre appareil se fige ou se ferme anormalement.</string>
     <string name="text_save_this_config">Modifier le nom de la configuration</string>
+    <string name="price_of_month">%1$s/mois</string>
+    <string name="price_of_year">%1$s/an</string>
+    <string name="free_trial">Essai Gratuit</string>
+    <string name="buy">Acheter ce plan</string>
+    <string name="subscription_after_trial_of_year">%1$s /an après 3 jours d\'essai GRATUIT</string>
+    <string name="subscription_after_trial_of_month">%1$s /mois après 3 jours d\'essai GRATUIT</string>
 </resources> 

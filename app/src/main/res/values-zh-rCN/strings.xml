@@ -242,4 +242,10 @@
     <string name="text_anti_detection">反检测设置</string>
     <string name="text_click_intervals_tips">40毫秒以下的点击间隔可能导致您的设备冻结或异常退出。</string>
     <string name="text_save_this_config">编辑配置名称</string>
+    <string name="price_of_month">%1$s/月</string>
+    <string name="price_of_year">%1$s/年</string>
+    <string name="free_trial">免费试用</string>
+    <string name="buy">购买此计划</string>
+    <string name="subscription_after_trial_of_year">%1$s /年（3天免费试用后）</string>
+    <string name="subscription_after_trial_of_month">%1$s /月（3天免费试用后）</string>
 </resources> 
